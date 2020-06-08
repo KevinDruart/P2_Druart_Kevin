@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'fulbopremier';
+    src: url('fulbo-premier-webfont.eot');
+    src: url('fulbo-premier-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fulbo-premier-webfont.woff2') format('woff2'),
+         url('fulbo-premier-webfont.woff') format('woff'),
+         url('fulbo-premier-webfont.ttf') format('truetype'),
+         url('fulbo-premier-webfont.svg#fulbopremier') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
