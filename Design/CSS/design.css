@@ -133,7 +133,7 @@ table {
 }
 
 .light {
-    width: 40%;
+    width: 15%;
 }
 
 .picture-block {
@@ -246,4 +246,37 @@ section {
 
 .ref2 {
     margin-left: 190px;
+}
+/*REGLE POUR AUTRES ECRANS*/
+@media screen and (max-width: 575px) {
+/*HEADER*/
+.identity {
+        font-family: 'open_sanssemibold';
+        width: 100%;
+        margin:0 auto;
+    }
+/*IMAGE*/
+.picture-block {
+        width: 100%;
+        background-color: #feca07;
+        text-align: center;
+    }
+/*ASIDE*/
+aside {
+        width: 100%;
+        background-color: #feca07;
+        color: grey;
+        font-size: 1.em;
+        order: 0;
+    }
+/*SECTION*/
+section {
+    flex-direction: column;
+    margin-left: 65px;
+    width: 100%;
+    color: #404040;
+    list-style: none;
+    font-size: 1.15em;
+    order:1;
+}
 }
