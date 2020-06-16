@@ -1,205 +1,249 @@
+/* RESET CSS*/
+/*Dévut du reset css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*Fin du reset*/
+
 /*Parametre polices*/
 
 @font-face {
-    font-family: 'ambleregular';
-    src: url('Polices/amble/Amble-Regular-webfont.eot');
-    src: url('Polices/amble/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Polices/amble/Amble-Regular-webfont.woff2') format('woff2'),
-         url('Polices/amble/Amble-Regular-webfont.woff') format('woff'),
-         url('Polices/amble/Amble-Regular-webfont.ttf') format('truetype'),
-         url('Polices/amble/Amble-Regular-webfont.svg#ambleregular') format('svg');
+    font-family: 'open_sanslight';
+    src: url('/Polices/opensans_bold_macroman/OpenSans-Light-webfont.eot');
+    src: url('/Polices/opensans_bold_macroman/OpenSans-Light-webfont.woff') format('woff'), 
+         url('/Polices/opensans_bold_macroman/OpenSans-Light-webfont.ttf') format('truetype'), 
+         url('/Polices/opensans_bold_macroman/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
+
 @font-face {
-    font-family: 'fulbopremier';
-    src: url('Polices/fulbo/fulbo-premier-webfont.eot');
-    src: url('Polices/fulbo/fulbo-premier-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Polices/fulbo/fulbo-premier-webfont.woff2') format('woff2'),
-         url('Polices/fulbo/fulbo-premier-webfont.woff') format('woff'),
-         url('Polices/fulbo/fulbo-premier-webfont.ttf') format('truetype'),
-         url('Polices/fulbo/fulbo-premier-webfont.svg#fulbopremier') format('svg');
+    font-family: 'open_sanssemibold';
+    src: url('/Polices/opensans_bold_macroman/OpenSans-Semibold-webfont.eot');
+    src: url('/Polices/opensans_bold_macroman/OpenSans-Semibold-webfont.woff') format('woff'), 
+         url('/Polices/opensans_bold_macroman/OpenSans-Semibold-webfont.ttf') format('truetype'), 
+         url('/Polices/opensans_bold_macroman/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 /*GENERALS*/
 
-body{
-    width: 900px; 
-    margin: 0 auto; 
-    font-family: 'ambleregular';
-    font-size: 14px;
-    padding-top: 0px;  
+.block_page {
+    width: 100%;
+    max-width: 1200px;
+    font-family: 'open_sanslight';
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .row {
     display: flex;
 }
+
 .col4 {
     flex: 0 0 33,33%;
-    max-width: 33,33%;  
+    max-width: 33,33%;
 }
+
 .col8 {
     flex: 0 0 66,66%;
     max-width: 66,66%;
 }
+
 .bartext {
-    height:2px;
-    width:100%;
-    padding:0px;
+    height: 2px;
+    width: 100%;
+    padding: 0px;
     margin: 0px;
-    background:#edc70b;
-    overflow:visible;
-    position:relative;
-    margin-top:5px;
-  }
+    background: #feca07;
+    overflow: visible;
+    position: relative;
+    margin-top: 5px;
+}
+
 @viewport {
     width: device-width; /* largeur du viewport */
     zoom: 1; /* zoom initial à 1.0 */
- }
+}
 /*HEADER*/
+.identity {
+    padding-top: 120px;
+    padding-left: 65px;
+    font-family: 'open_sanssemibold';
+    width: 70%;
+}
+
 .name {
-    font-size: 32px;
+    font-size: 2.4em;
+}
+
+.subtitle {
+    font-size: 1.2em;
+}
+
+.yellow {
+    color: #feca07;
     text-transform: uppercase;
 }
-.yellow {
-    color: #edc70b;
-}
+
 .light {
     width: 40%;
 }
+
 .picture-block {
-    width: 207px;
-    background-color: #edc70b;
+    width: 30%;
+    background-color: #feca07;
     text-align: center;
 }
 /*IMAGE RONDE*/
-.ronde-bg{
-    background-size : contain;
-    background-position : 50% 50%; 
-    background-image : url(/Images/photo_mini.jpeg);
-    display : inline-block;
-    width : 120px; 
-    height : 120px;
-    border: none;
-    -moz-border-radius : 75px;
-    -webkit-border-radius : 75px;
-    box-shadow: 5px 5px 5px grey;
-    border-radius : 75px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-.identity {
-    padding: 40px 0px 0px 60px;
+.ronde-bg {
+    margin-top: 65px;
+    margin-bottom: 43px;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    box-shadow: 2px 2px 2px grey;
 }
 
-/*container*/
-
+/*Corps*/
 /*ASIDE*/
+aside {
+    flex-direction: column;
+    width: 30%;
+    background-color: #feca07;
+    color: grey;
+    font-size: 1.em;
+}
 
 .title-aside {
-    display: flex;
-    background-color: black;
-    color: #edc70b;
-    font-family: 'fulbopremier';
-}
-aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding:0px 15px 0px 15px;
-    width: 184px;
-    height: 550px; 
-    position: relative;
-    background-color: #edc70b;
-    color: grey;
-    font-size: 0.9em;
-}
- address {
+    background-color: #404040;
+    color: #feca07;
+    height: 47px;
+    font-size: 24px;
     text-align: center;
+    line-height: 47px;
+    text-transform: uppercase;
 }
+
+.info {
+    text-align: left;
+    margin-left: 48px;
+}
+
+.contact {
+    padding-top: 36px;
+}
+
+.about {
+    margin-top: 52px;
+    padding-bottom: 402px;
+}
+
 .about-me {
-    text-align: center;
+    padding-top: 38px;
+    padding-right: 48px;
+    word-wrap: break-word;
 }
 
-/*SECTION*/
-
-.title-section {
-    font-family: 'fulbopremier';
-}
-section {
+.activities {
+    padding-top: 38px;
+    padding-bottom: 36px;
     display: flex;
+    flex-direction: row;
+    margin-right: auto;
+}
+
+.list {
+    margin-left: 38px;
+}
+/*SECTION*/
+.title-section {
+    font-size: 1.6em;
+}
+
+section {
     flex-direction: column;
     justify-content: space-around;
-    padding-left: 20px;
-    margin: 0 auto;
-    width: 700px;
-    color: black;
+    margin-left: 65px;
+    width: 70%;
+    color: #404040;
     list-style: none;
-}
-.list {
-    list-style: none;
+    font-size: 1.15em;
 }
 
-/*REGLE POUR SMARTPHONE*/
-@media screen and (min-width: 0px) and (max-width: 479px) {
-
-body{
-    display: flex;
-    flex-direction: column;
-    width: auto; 
-    margin: auto; 
-    font-family: 'ambleregular';
-    font-size: 14px;
-    padding-top: 0px; 
-    text-align: center;
-    }
-.title-aside {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    color: #edc70b;
-    font-family: 'fulbopremier';
-}
-aside {
-    display: flex;
-    flex-direction: column;
-    padding:0px 15px 0px 15px;
-    width: 100%;
-    height: auto; 
-    background-color: #edc70b;
-    color: grey;
-    font-size: 0.9em;
-    margin-left:auto;
-    margin-top:auto;
-    clear: both;
-
-}
-.list {
-  list-style: none;
-}
-.row {
-    display: flex;
-    flex-direction: column;
-}
-.col4 {
-    flex: 0 0 100%;
-    max-width: 100%;  
-}
-.col8 {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-.picture-block {
-    background-color: #edc70b;
-    width: 100%;
-    text-align: center;
-}
-.light {
-    display: none;
+.poste {
+    margin-left: 128px;
+    word-wrap: break-word;
 }
 
-  }
+.form {
+    padding-top: 52px;
+}
+
+.experiences {
+    padding-top: 80px;
+}
+
+.exp {
+    padding-top: 52px;
+}
+
+.references {
+    padding-top: 52px;
+}
+
+.few-references {
+    padding-top: 38px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ref2 {
+    margin-left: 190px;
+}
