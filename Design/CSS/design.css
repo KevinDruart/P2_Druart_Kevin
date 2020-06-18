@@ -158,7 +158,7 @@ aside {
     width: 30%;
     background-color: #feca07;
     color: grey;
-    font-size: 1.em;
+    font-size: 1em;
 }
 
 .title-aside {
@@ -174,6 +174,9 @@ aside {
 .info {
     text-align: left;
     margin-left: 48px;
+}
+.website {
+    word-break:break-word;
 }
 
 .contact {
@@ -219,64 +222,82 @@ section {
 
 .poste {
     margin-left: 128px;
-    word-wrap: break-word;
 }
 
 .form {
     padding-top: 52px;
 }
-
 .experiences {
     padding-top: 80px;
 }
-
 .exp {
     padding-top: 52px;
 }
-
 .references {
     padding-top: 52px;
 }
-
 .few-references {
     padding-top: 38px;
     display: flex;
     flex-direction: row;
 }
-
 .ref2 {
     margin-left: 190px;
 }
 /*REGLE POUR AUTRES ECRANS*/
 @media screen and (max-width: 575px) {
+/*GENERALS*/
+body {
+    display:flex;
+    width:100%;
+}
+.container {
+    flex-direction:column;
+    width:100%;
+}
+    .col4 {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+.col8 {
+    width:100%;
+}
 /*HEADER*/
+header{
+    flex-direction:column;
+}
 .identity {
-        font-family: 'open_sanssemibold';
-        width: 100%;
-        margin:0 auto;
-    }
+    padding-top:10px;
+    padding-bottom:10px;
+    font-family: 'open_sanssemibold';
+    text-align:center;
+}
+.light {
+    width:20%;
+    margin-left:auto;
+    margin-right:auto;
+}
 /*IMAGE*/
+img {
+    margin-left:auto;
+    margin-right:auto;
+}
 .picture-block {
-        width: 100%;
-        background-color: #feca07;
-        text-align: center;
-    }
+    background-color: #feca07;
+}
 /*ASIDE*/
 aside {
-        width: 100%;
-        background-color: #feca07;
-        color: grey;
-        font-size: 1.em;
-        order: 0;
-    }
+    background-color: #feca07;
+    color: grey;
+    font-size: 1em;
+    order: 1;
+}
 /*SECTION*/
 section {
     flex-direction: column;
-    margin-left: 65px;
-    width: 100%;
     color: #404040;
     list-style: none;
     font-size: 1.15em;
-    order:1;
+    order:0;
 }
 }
