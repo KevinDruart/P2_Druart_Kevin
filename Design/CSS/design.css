@@ -286,11 +286,17 @@ img {
     background-color: #feca07;
 }
 /*ASIDE*/
+.personal-info{
+    text-align:center;
+}
 aside {
     background-color: #feca07;
     color: grey;
     font-size: 1em;
     order: 1;
+}
+.about {
+    padding-bottom:52px;
 }
 /*SECTION*/
 section {
@@ -299,5 +305,6 @@ section {
     list-style: none;
     font-size: 1.15em;
     order:0;
+    margin-left:0px;
 }
 }
