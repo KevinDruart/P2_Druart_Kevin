@@ -257,6 +257,10 @@ strong {
 #parcours a {
     color: #7F7F7F;
 }
+a:link {
+    text-decoration:none;
+    color: black;
+}
 
 #parcours a:hover {
     color: rgba(126,87,194,1);
