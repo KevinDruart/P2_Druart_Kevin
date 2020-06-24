@@ -259,7 +259,7 @@ section {
 }
 .date-exp {
     flex-direction: column;
-    witdh:30%;
+    width:30%;
     font-size:12px;
     font-family:open_sanssemibold,Calibri,sans-serif;
 }
