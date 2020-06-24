@@ -85,16 +85,6 @@ table {
   display:flex;  
 }
 
-.col4 {
-  flex: 0 0 33,33%;
-  max-width: 33,33%;
-}
-
-.col8 {
-  flex: 0 0 66,66%;
-  max-width: 66,66%;
-}
-
 h1, h2, h3 {
     text-transform: uppercase;
 }
@@ -119,7 +109,7 @@ h1 {
 }
 
     /*HEADER*/
-    header {
+header {
     display:flex;
     flex-direction:row;
 }
@@ -335,3 +325,78 @@ a:link {
 .recommand-info {
     font-weight:bold;
 }
+
+@media screen and (max-width: 820px) {
+    /*PARAMETRES GENERAUX*/
+body {
+    max-width:820px;
+    width:100%;
+    margin:auto;
+}
+
+#block_page {
+   display:flex;
+   flex-wrap:wrap;
+}
+
+.row {
+    flex-direction:column;
+}
+
+    /*HEADER*/
+header {
+    flex-direction:column;
+    order:0;
+    width:100%;
+}
+.picture-block {
+    width:100%;
+}
+.main_title {
+    text-align:center;
+    padding-bottom:10px;
+    padding-top:10px;
+}
+.underline {
+    border-bottom: none;
+}
+
+    img {
+        margin: 0 auto;
+    }
+
+/*SECTION PARCOURS*/
+
+section{
+    order:1;
+}
+#parcours {
+    width:100%;
+    padding:20px;
+}
+.parcours_item {
+    padding-top:10px;
+    border-top:2px solid #feca07;
+    text-align:justify;
+}
+
+.description-poste {
+    word-break:break-word;
+}
+    /*ASIDE INFO PERSO*/
+    aside {
+        display: flex;
+        width: 100%;
+        order: 2;
+    }
+#personal_info {
+    width:100%;
+    text-align:-webkit-center;
+}
+.contact {
+    padding: 10px 10px 10px 10px;
+}
+
+}
+
+
