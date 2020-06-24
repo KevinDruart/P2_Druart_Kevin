@@ -103,9 +103,23 @@ h1 {
     font-size: 2.4em;
 }
 
-/*HEADER*/
+.fa-briefcase:before {
+    font-size: 40px;
+    padding-right: 36px;
+}
 
-header {
+.fa-graduation-cap:before {
+    font-size: 40px;
+    padding-right: 36px;
+}
+
+.fa-pencil:before {
+    font-size:40px;
+    padding-right:36px;
+}
+
+    /*HEADER*/
+    header {
     display:flex;
     flex-direction:row;
 }
@@ -177,8 +191,12 @@ strong {
     font-family: 'open_sanslight',Calibri,sans-serif;
 }
 
+.info {
+    font-weight:bold;
+}
+
 .about-me {
-    padding:48px 48px 100px 48px;
+    padding:48px 48px 400px 48px;
 }
 
 #loisirs {
@@ -210,6 +228,7 @@ strong {
     width:212px;
     font-size: 12px;
     font-family: 'open_sanssemibold',Calibri,sans-serif;
+    font-weight: bold;
 }
 
 .date-lieu {
@@ -238,11 +257,19 @@ strong {
     flex-direction: row;
     margin-bottom: 30px;
     width: 100%;
+    padding-top:20px;
 }
 
 .parcours_sub_item i {
     font-size: 15px;
  }
+
+.title-parcours {
+    font-family:open_sanslight;
+    font-weight:bold;
+    font-size:24px;
+    color:black;
+}
 
 
 #parcours {
@@ -275,7 +302,14 @@ a:link {
 }
 
 .sous_titre {
-    margin-bottom: 10px;
+    margin:10px 0px 10px 0px;
+    font-weight:bold;
+}
+
+.enterprise {
+    font-family: open_sanslight;
+    font-weight: bold;
+    color: black;
 }
 
 
@@ -288,6 +322,7 @@ a:link {
 #recommandations_contenu {
     display: flex;
     flex-direction: row;
+    padding-top:20px;
 }
 
 .recommandations_details {
@@ -295,4 +330,8 @@ a:link {
     flex-direction: column;
     padding-bottom: 10px;
     width: 50%;
+}
+
+.recommand-info {
+    font-weight:bold;
 }
