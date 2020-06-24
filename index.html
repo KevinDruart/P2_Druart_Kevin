@@ -1,48 +1,47 @@
 ﻿<!DOCTYPE html>
-<html>
+
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Design/CSS/design.css" />
-    <title>Kevin Druart</title>
+    <link rel="stylesheet" href="design/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CV Kevin 2</title>
 </head>
-
 <body>
-    <div class="block_page">
-        <!--header-->
-        <header class="cv-header row">
-            <div class="picture-block col4">
-                <p>
-                    <img src="Design/Images/photo.jpeg" alt="Photo d'identité Druart Kevin" class="ronde-bg" />
-                </p>   
+    <main id="block_page">
+        <header class="row">
+            <div class="picture-block">
+                <img src="design/images/photo.jpeg" alt="Photo d'identité Druart Kevin" class="col4" />
             </div>
-            <div class="identity col8">
-                <h1 class="name header"><span class="yellow">KEVIN</span> DRUART</h1>
-                <h2 class="subtitle">Développeur Web</h2>
-                <p class="bartext light"></p> 
+            <div class="main_title col8">
+                <h1 class="title_name"><strong>Kevin</strong> Druart</h1>
+                <h2 class="subtilte_name"><span class="underline">Devel</span>oppeur Web</h2>
             </div>
         </header>
-        <div class="container row">
-            <aside class="col4">
+        <main class="row">
+            <aside id="personal_info" class="left col4">
+
                 <!--section informations personnel-->
-                <div class="personal-info">
+                <div class="coords-block">
                     <h2 class="title-aside">Contact</h2>
-                    <p class="contact">
-                    <br>
-                    <h3 class="info">Adresse email:</h3>
-                    <p class="info">k.druart2@gmail.com</p><br>
-                    <br>
-                    <h3 class="info">Téléphone:</h3>
-                    <a class="info">07 67 67 84 59</a><br>
-                    <br>
-                    <h3 class="info">Adresse:</h3>
-                    <address class="info">
-                        5 promenade Bougainville<br>
-                        59200 Tourcoing<br>
+                    <div class="contact">
+                        <p class="info">Adresse email:</p>
+                        <p class="info">k.druart2@gmail.com</p><br>
                         <br>
-                    </address>
-                    <h3 class="info">Site web</h3>
-                    <p class="info website">www.kevin.fr</p>
+                        <p class="info">Téléphone:</p>
+                        <a class="info">07 67 67 84 59</a><br>
+                        <br>
+                        <p class="info">Adresse:</p>
+                        <address class="info">
+                            5 promenade Bougainville<br>
+                            59200 Tourcoing<br>
+                            <br>
+                        </address>
+                        <p class="info">Site web</p>
+                        <p class="info website">www.kevin.fr</p>
+                    </div>
+                </div>
                 <!--section a propos de moi-->
                 <div class="about">
                     <h2 class="title-aside">A propos</h2>
@@ -53,100 +52,144 @@
                     </p>
                 </div>
                 <!--section mes passions-->
-                <div class="passions">
-                    <h2 class="title-aside">Passions</h2>
-                    <ul class="info activities">
-                        <li><img src="Design/Images/icons/icons1.png" alt="computer" class="img-activities" /></li>
-                        <li><img src="Design/Images/icons/icons2.png" alt="biking" class="img-activities list" /></i></li>
-                        <li><img src="Design/Images/icons/icons3.png" alt="football" class="img-activities list" /></i></li>
-                    </ul>
-                </div>
+                <div id="last">
+                    <h2 class="title-aside">loisirs</h2>
+                    <div id="loisirs">
+                        <i class="icons fa fa-bicycle"></i>
+                        <i class="icons fa fa-futbol-o"></i>
+                        <i class="icons fa fa-laptop"></i>
+                    </div>
                 </div>
             </aside>
-            <section class="col8">
-                <!--section parcours de formation-->
-                <div class="formation">
-                    <h2 class="title-section"><img src="Design/Images/icons/chapeau.png" class="img-cv" /></i> Mon parcours de formation</h2>
-                    <p class="bartext"></p>
-                    <ul class="form">
-                        <li><img src="Design/Images/icons/point-actuel.png" class="img-chrono" /><strong>Actuellement</strong>   Developpeur Web chez Openclassrooms.</li>
-                        <li><img src="Design/Images/icons/point.png" class="img-chrono" /><strong>2005</strong>   Formation peinture et revêtements.</li>
-                    </ul>
-                </div>
-                <!--section experiences professionel-->
-                <div class="experiences">
-                    <h2 class="title-section"><img src="Design/Images/icons/cartable.png" class="img-cv" /> Mon expérience</h2>
-                    <p class="bartext"></p>
-                    <ul class="exp">
-                        <li class="cv-exp">
-                            <div class="date-exp">
-                                <p><img src="Design/Images/icons/point.png" class="img-chrono" />2017 à 2019</p>
-                                <h4>Tourcoing</h4>
+            <section id="parcours" class="right col8">
+                <div class="parcours_item">
+                    <div class="parcours_item_titre">
+                        <i class="fal fa fa-graduation-cap"></i>
+                        <h2 class="title-parcours">Formation</h2>
+                    </div>
+                    <div class="parcours_sub_item">
+                        <div class="realised">
+                            <div class="date_location">
+                                <i class="far fa fa-dot-circle-o"></i>
+                                <div class="date-lieu">
+                                    <p class="date">Mai20 - Courant</p>
+                                    <p class="lieu">Tourcoing</p>
+                                </div>
                             </div>
-                            <div class="poste">
-                                <h4 class="labels">Conducteur de Travaux</h4>
+                        </div>
+                        <div>
+                            <h3>openclassrooms</h3>
+                            <p class="sous_titre">Développeur web</p>
+                            <p>
+                                Formation a distance.
+                                Afin de me reconvertir et d'acquerir les compétences de base nécessaires pour ensuite travailler
+                                en tant que développeur web: html5, css3, , javascript, PHP, MySql...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="parcours_sub_item">
+                        <div class="realised">
+                            <div class="date_location">
+                                <i class="fas fa fa-circle"></i>
+                                <div class="date-lieu">
+                                    <p class="date">2004 - 2005</p>
+                                    <p class="lieu">Tourcoing</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>CFA Le Corbusier</h3>
+                            <p class="sous_titre">Finition peinture et revetements</p>
+                            <p>
+                                Formation pour acquerir les base du metiers de peintres en batiments.
+                                Techniques de pose des differents revetements sol, mur. Apprentissage des travaux de mise en peinture...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="parcours_item">
+                        <div class="parcours_item_titre">
+                            <i class="fal fa fa-briefcase"></i>
+                            <h2 id="experience">expérience professionnelle</h2>
+                        </div>
+                        <div class="parcours_sub_item">
+                            <div class="realised">
+                                <div class="date_location">
+                                    <i class="far fa fa-circle"></i>
+                                    <div class="date-lieu">
+                                        <p class="date">2017 - 2019</p>
+                                        <p class="lieu">Tourcoing</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="enterprise">Easy'nnove</h3>
+                                <p class="sous_titre">Conducteur de travaux</p>
                                 <p>
-                                Gestion des chantiers et des
-                                planinngs. Réalisation placo, isolation, menuiserie, peinture...
+                                    Gestion des chantiers et des
+                                    planinngs. Réalisation placo, isolation, menuiserie, peinture...
                                 </p>
                             </div>
-                        </li>
-                        <li class="cv-exp">
-                            <div class="date-exp">
-                                <p><img src="Design/Images/icons/point.png" class="img-chrono" />2016 à 2017</p>
-                                <h4>Wattrelos</h4>
+                        </div>
+                        <div class="parcours_sub_item">
+                            <div class="realised">
+                                <div class="date_location">
+                                    <i class="fas fa fa-circle"></i>
+                                    <div class="date-lieu">
+                                        <p class="date">2016 - 2017</p>
+                                        <p class="lieu">Wattrelos</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="poste"> 
-                                <h4 class="labels">Employée libre service</h4>
+                            <div>
+                                <h3 class="enterprise">Action</h3>
+                                <p class="sous_titre">Employé libre service</p>
                                 <p>
-                                Mise en rayon, Gestion de stock, hote de caisse et
-                                logistique.
+                                    Mise en rayon, Gestion de stock, hote de caisse et
+                                    logistique.
                                 </p>
                             </div>
-                        </li>
-                        <li class="cv-exp">
-                            <div class="date-exp">
-                                <img src="Design/Images/icons/point.png" class="img-chrono" />2013 à 2015
-                                <h4>La Madeleine</h4>
+                        </div>
+                        <div class="parcours_sub_item">
+                            <div class="realised">
+                                <div class="date_location">
+                                    <i class="fas fa fa-circle"></i>
+                                    <div class="date-lieu">
+                                        <p class="date">2013 - 2015</p>
+                                        <p class="lieu">La Madeleine</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="poste"> 
-                                <h4 class="labels">Conducteur de travaux</h4>
+                            <div>
+                                <h3 class="enterprise">Domo Nord Habitat</h3>
+                                <p class="sous_titre">Conducteur de travaux</p>
                                 <p>
                                     Gestion des chantiers et des
                                     plannings salariés (7salariés).Réalisation placo, isolation, menuiserie, peinture..
                                 </p>
                             </div>
-                        </li>
-                    </ul>
-                </div>
-                <!--section recommendation-->
-                <div class="references">
-                    <h2 class="title-section"><img src="Design/Images/icons/crayons.png" class="img-cv" />Recommandations</h2>
-                    <p class="bartext"></p>
-                    <div class="few-references">
-                        <div class="ref1">
-                            <h5 class="title-ref">Mélodie T'joen</h5>
-                            <h6 class="subtitle-ref">Ma directrice générale</h6>
-                            <adresse class="adress-ref">
-                                115 Rue de tournai<br>
-                                59200<br>
-                                Tourcoing
-                            </adresse>
-                            <p>Tel: 06 00 00 00 00</p>
                         </div>
-                        <div class="ref2">
-                            <h5 class="title-ref">Druart Jonathan</h5>
-                            <h6 class="subtitle-ref">Mon directeur générale</h6>
-                            <address class="adress-ref">
-                                89 rue de guisnes<br>
-                                59200<br>
-                                Tourcoing
-                            </address>
-                            <p>Tel: 06 00 00 00 00</p>
+                        <div id="recommandations">
+                            <div class="parcours_item_titre">
+                                <i class="fas fa fa-pencil"></i>
+                                <h2>recommandations</h2>
+                            </div>
+                            <div id="recommandations_contenu">
+                                <div class="recommandations_details">
+                                    <p>Mélodie T'joen</p>
+                                    <p>Directrice générale</p>
+                                    <a href="maito:melodie@easynnove.fr">mélodie@easynnove.fr</a>
+                                </div>
+                                <div class="recommandations_details">
+                                    <p>Jonathan Druart</p>
+                                    <p>Directeur générale</p>
+                                    <a href="mailto:jonathandruart@domonordhabitat.fr">jonathandruart@domonordhabitat.fr</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-        </div>
-    </div>
+        </main>
+    </main>
 </body>
+</html>
