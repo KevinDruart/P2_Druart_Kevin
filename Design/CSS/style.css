@@ -397,10 +397,13 @@ section{
     border-top:2px solid #feca07;
     text-align:justify;
 }
+.date_location {
+    width:140px;
+}
 
 .description-poste {
-    word-break:break-word;
-}
+        word-break: break-word;
+    }
     /*ASIDE INFO PERSO*/
 aside {
     display: flex;
