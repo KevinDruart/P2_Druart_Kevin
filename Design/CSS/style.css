@@ -312,6 +312,7 @@ a:link {
 
 #recommandations {
     width: 100%;
+    margin-top:70px;
 }
 
 #recommandations_contenu {
@@ -376,7 +377,7 @@ section{
     order:1;
 }
 #parcours {
-    width:100%;
+    width:auto;
     padding:20px;
 }
 .parcours_item {
