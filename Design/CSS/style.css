@@ -55,15 +55,15 @@ table {
 @font-face {
     font-family: 'open_sanslight';
     src: url('Polices/opensans_light_macroman/OpenSans-Light-webfont.eot');
-    src: url('Polices/opensans_light_macroman/OpenSans-Light-webfont.woff') format('woff'), url('/Polices/opensans_light_macroman/OpenSans-Light-webfont.ttf') format('truetype'), url('/Polices/opensans_light_macroman/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    src: url('Polices/opensans_light_macroman/OpenSans-Light-webfont.woff') format('woff'), url('Polices/opensans_light_macroman/OpenSans-Light-webfont.ttf') format('truetype'), url('Polices/opensans_light_macroman/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'open_sanssemibold';
-    src: url('Polices/opensans_bold_macroman/OpenSans-Semibold-webfont.eot');
-    src: url('Polices/opensans_bold_macroman/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('/Polices/opensans_bold_macroman/OpenSans-Semibold-webfont.woff2') format('woff2'), url('/Polices/opensans_bold_macroman/OpenSans-Semibold-webfont.woff') format('woff'), url('/Polices/opensans_bold_macroman/OpenSans-Semibold-webfont.ttf') format('truetype'), url('/Polices/opensans_bold_macroman/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+    src: url('Polices/opensans_semibold_macroman/OpenSans-Semibold-webfont.eot');
+    src: url('Polices/opensans_semibold_macroman/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('Polices/opensans_semibold_macroman/OpenSans-Semibold-webfont.woff') format('woff'), url('Polices/opensans_semibold_macroman/OpenSans-Semibold-webfont.ttf') format('truetype'), url('/Polices/opensans_semibold_macroman/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -142,8 +142,8 @@ img {
 }
 
 .title_name {
-    font-family: 'open_sanssemibold',Calibri,sans-serif;
-    font-size: 2.4em;
+    font-family: open_sanssemibold,Calibri,sans-serif;
+    font-size: 3.2em;
 }
 
 .subtilte_name {
@@ -151,15 +151,19 @@ img {
     font-size: 1.2em;
 }
 
-strong {
+.yellow {
     color: #feca07;
     margin-right: 10px;
+    font-weight:bold;
 }
 
 .underline {
     border-bottom: 2px solid #feca07;
 }
 
+.coords-block div {
+    margin-bottom:10px;
+}
 /*SIDE LEFT*/
 
 #personal_info {
@@ -171,7 +175,7 @@ strong {
 }
 
 .contact {
-    padding:36px 48px 52px 48px;
+    padding:36px 48px 36px 48px;
 }
 
 .title-aside {
@@ -182,24 +186,25 @@ strong {
     text-align: center;
     line-height: 47px;
     text-transform: uppercase;
-    font-family: 'open_sanslight',Calibri,sans-serif;
+    font-family: open_sanssemibold,Calibri,sans-serif;
 }
 
 .info {
-    font-weight:bold;
+    font-family:open_sanssemibold;
     color:#404040;
 }
 
 .about-me {
-    padding:48px 48px 400px 48px;
+    padding:48px 48px 430px 48px;
+    line-height:24px;
+    text-align:justify;
 }
 
 #loisirs {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     padding-bottom: 10px;
-    padding-top:10px;
+    padding-top:30px;
 }
 
 #loisirs i {
@@ -243,6 +248,7 @@ strong {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    padding-bottom: 10px;
     margin-bottom: 20px;
     width: 100%;
 }
@@ -270,6 +276,7 @@ strong {
 #parcours {
     width: 70%;
     padding-left:64px;
+    line-height:22px;
 }
 
 #parcours p {
@@ -307,12 +314,10 @@ a:link {
     color: black;
 }
 
-
 /*RECOMMANDATIONS*/
 
 #recommandations {
     width: 100%;
-    margin-top:70px;
 }
 
 #recommandations_contenu {
@@ -329,12 +334,18 @@ a:link {
 }
 
 .recommand-info {
-    font-weight:bold;
+    font-family:open_sanssemibold;
+    margin-bottom:10px;
 }
+.info-name{
+    text-transform:uppercase;
+}
+
+                                    /*HERE ALL RESPONSIVE*/
 
 @media screen and (max-width: 820px) {
     /*PARAMETRES GENERAUX*/
-body {
+    body {
 
     width:100%;
     margin:auto;
@@ -355,9 +366,10 @@ header {
     order:0;
     width:100%;
 }
-.picture-block {
-    width:100%;
-}
+    .picture-block {
+        width: 100%;
+        padding: 20px 0px 20px 0px;
+    }
 .main_title {
     text-align:center;
     padding-bottom:10px;
@@ -390,19 +402,26 @@ section{
     word-break:break-word;
 }
     /*ASIDE INFO PERSO*/
-    aside {
-        display: flex;
-        width: 100%;
-        order: 2;
+aside {
+    display: flex;
+    width: 100%;
+    order: 2;
     }
 #personal_info {
     width:100%;
-    text-align:-webkit-center;
+    text-align:justify;
 }
 .contact {
     padding: 10px 10px 10px 10px;
+    text-align:center;
 }
-
+.about-me {
+    padding:20px;
+    text-align:center;
+}
+#loisirs {
+    padding:10px 0px;
+}
 }
 
 
