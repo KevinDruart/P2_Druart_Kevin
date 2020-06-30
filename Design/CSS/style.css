@@ -337,7 +337,8 @@ a:link {
     font-family:open_sanssemibold;
     margin-bottom:10px;
 }
-.info-name{
+
+.info-name {
     text-transform:uppercase;
 }
 
@@ -403,6 +404,8 @@ section{
 .description-poste {
         word-break: break-word;
     }
+
+
     /*ASIDE INFO PERSO*/
 aside {
     display: flex;
@@ -424,6 +427,18 @@ aside {
 #loisirs {
     padding:10px 0px;
 }
+}
+
+@media screen and (max-width: 570px) {
+    #recommandations_contenu {
+        display: block;
+        padding-top: 0;
+    }
+
+    .recommandations_details {
+        width: auto;
+        text-align: center;
+    }
 }
 
 
