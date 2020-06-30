@@ -76,13 +76,14 @@ table {
     margin-left: auto;
     margin-right: auto;
 }
+
 @viewport {
-  width: device-width; /* largeur du viewport */
-  zoom: 1; /* zoom initial à 1.0 */
+    width: device-width; /* largeur du viewport */
+    zoom: 1; /* zoom initial à 1.0 */
 }
 
 .row {
-  display:flex;  
+    display: flex;
 }
 
 h1, h3 {
@@ -90,7 +91,7 @@ h1, h3 {
 }
 
 .title-parcours {
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
 h1 {
@@ -108,14 +109,14 @@ h1 {
 }
 
 .fa-pencil:before {
-    font-size:40px;
-    padding-right:36px;
+    font-size: 40px;
+    padding-right: 36px;
 }
 
-    /*HEADER*/
+/*HEADER*/
 header {
-    display:flex;
-    flex-direction:row;
+    display: flex;
+    flex-direction: row;
 }
 
 img {
@@ -130,9 +131,9 @@ img {
 }
 
 .picture-block {
-    width:30%;
-    background-color:#feca07;
-    text-align:center;
+    width: 30%;
+    background-color: #feca07;
+    text-align: center;
 }
 
 .main_title {
@@ -154,7 +155,7 @@ img {
 .yellow {
     color: #feca07;
     margin-right: 10px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .underline {
@@ -162,7 +163,7 @@ img {
 }
 
 .coords-block div {
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 /*SIDE LEFT*/
 
@@ -175,7 +176,7 @@ img {
 }
 
 .contact {
-    padding:36px 48px 36px 48px;
+    padding: 36px 48px 36px 48px;
 }
 
 .title-aside {
@@ -190,32 +191,32 @@ img {
 }
 
 .info {
-    font-family:open_sanssemibold;
-    color:#404040;
+    font-family: open_sanssemibold;
+    color: #404040;
 }
 
 .about-me {
-    padding:48px 48px 430px 48px;
-    line-height:24px;
-    text-align:justify;
+    padding: 48px 48px 430px 48px;
+    line-height: 24px;
+    text-align: justify;
 }
 
 #loisirs {
     display: flex;
     justify-content: space-around;
     padding-bottom: 10px;
-    padding-top:30px;
+    padding-top: 30px;
 }
 
-#loisirs i {
-    font-size: 30px;
-    border: 2px solid #373737;
-    border-radius: 100%;
-    padding: 10px 12px 10px 12px;
-    width: 30px;
-    height: 30px;
-    color: #373737;
-}
+    #loisirs i {
+        font-size: 30px;
+        border: 2px solid #373737;
+        border-radius: 100%;
+        padding: 10px 12px 10px 12px;
+        width: 30px;
+        height: 30px;
+        color: #373737;
+    }
 
 /*SIDE RIGHT*/
 
@@ -224,16 +225,16 @@ img {
 
 .date_location {
     flex-direction: row;
-    display:flex;
-    width:212px;
+    display: flex;
+    width: 212px;
     font-size: 12px;
     font-family: 'open_sanssemibold',Calibri,sans-serif;
     font-weight: bold;
 }
 
 .date-lieu {
-    flex-direction:column;
-    padding-left:10px;
+    flex-direction: column;
+    padding-left: 10px;
 }
 
 .parcours_item {
@@ -258,36 +259,37 @@ img {
     flex-direction: row;
     margin-bottom: 30px;
     width: 100%;
-    padding-top:20px;
+    padding-top: 20px;
 }
 
-.parcours_sub_item i {
-    font-size: 15px;
- }
+    .parcours_sub_item i {
+        font-size: 15px;
+    }
 
 .title-parcours {
-    font-family:open_sanslight;
-    font-weight:bold;
-    font-size:24px;
-    color:black;
+    font-family: open_sanslight;
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
 }
 
 
 #parcours {
     width: 70%;
-    padding-left:64px;
-    line-height:22px;
+    padding-left: 64px;
+    line-height: 22px;
 }
 
-#parcours p {
-    color: #5E5E5E;
-}   
+    #parcours p {
+        color: #5E5E5E;
+    }
 
-#parcours a {
-    color: #7F7F7F;
-}
+    #parcours a {
+        color: #7F7F7F;
+    }
+
 a:link {
-    text-decoration:none;
+    text-decoration: none;
     color: #404040;
 }
 
@@ -304,8 +306,8 @@ a:link {
 }
 
 .sous_titre {
-    margin:10px 0px 10px 0px;
-    font-weight:bold;
+    margin: 10px 0px 10px 0px;
+    font-weight: bold;
 }
 
 .enterprise {
@@ -323,7 +325,7 @@ a:link {
 #recommandations_contenu {
     display: flex;
     flex-direction: row;
-    padding-top:20px;
+    padding-top: 20px;
 }
 
 .recommandations_details {
@@ -334,99 +336,109 @@ a:link {
 }
 
 .recommand-info {
-    font-family:open_sanssemibold;
-    margin-bottom:10px;
+    font-family: open_sanssemibold;
+    margin-bottom: 10px;
 }
 
 .info-name {
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
-                                    /*HERE ALL RESPONSIVE*/
+/*HERE ALL RESPONSIVE*/
 
 @media screen and (max-width: 820px) {
     /*PARAMETRES GENERAUX*/
     body {
-    width:100%;
-    margin:auto;
-}
+        width: 100%;
+        margin: auto;
+    }
 
-#block_page {
-   display:flex;
-   flex-wrap:wrap;
-}
+    #block_page {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-.row {
-    flex-direction:column;
-}
+    .row {
+        flex-direction: column;
+    }
 
     /*HEADER*/
-header {
-    flex-direction:column;
-    order:0;
-    width:100%;
-}
-.picture-block {
-    width: auto;
-    padding: 20px 0px 20px 0px;
+    header {
+        flex-direction: column;
+        order: 0;
+        width: 100%;
     }
-.main_title {
-    text-align:center;
-    padding-bottom:10px;
-    padding-top:10px;
-}
-.underline {
-    border-bottom: none;
-}
 
-img {
-margin: 0 auto;
-}
+    .picture-block {
+        width: auto;
+        padding: 20px 0px 20px 0px;
+    }
 
-/*SECTION PARCOURS*/
+    .main_title {
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
 
-section{
-    order:1;
-}
-#parcours {
-    width:auto;
-    padding:20px;
-}
-.parcours_item {
-    padding-top:10px;
-    border-top:2px solid #feca07;
-    text-align:justify;
-}
-.date_location {
-    width:120px;
-}
+    .underline {
+        border-bottom: none;
+    }
 
-.description-poste {
+    img {
+        margin: 0 auto;
+    }
+
+    /*SECTION PARCOURS*/
+
+    section {
+        order: 1;
+    }
+
+    #parcours {
+        width: auto;
+        padding: 20px;
+    }
+
+    .parcours_item {
+        padding-top: 10px;
+        border-top: 2px solid #feca07;
+        text-align: justify;
+    }
+
+    .date_location {
+        width: 120px;
+    }
+
+    .description-poste {
         word-break: break-word;
     }
 
 
     /*ASIDE INFO PERSO*/
-aside {
-    display: flex;
-    width: 100%;
-    order: 2;
+    aside {
+        display: flex;
+        width: 100%;
+        order: 2;
     }
-#personal_info {
-    width:100%;
-    text-align:justify;
-}
-.contact {
-    padding: 10px 10px 10px 10px;
-    text-align:center;
-}
-.about-me {
-    padding:20px;
-    text-align:center;
-}
-#loisirs {
-    padding:10px 0px;
-}
+
+    #personal_info {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .contact {
+        padding: 10px 10px 10px 10px;
+        text-align: center;
+    }
+
+    .about-me {
+        padding: 20px;
+        text-align: center;
+    }
+
+    #loisirs {
+        padding: 10px 0px;
+    }
 }
 
 @media screen and (max-width: 570px) {
@@ -440,5 +452,3 @@ aside {
         text-align: center;
     }
 }
-
-
