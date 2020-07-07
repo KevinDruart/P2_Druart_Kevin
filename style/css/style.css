@@ -77,11 +77,6 @@ table {
     margin-right: auto;
 }
 
-@viewport {
-    /*width:device-width;*/
-    zoom: 1; /* zoom initial à 1.0 */
-}
-
 .row {
     display: flex;
 }
@@ -453,4 +448,9 @@ a:link {
     }
 }
 
+@media screen and (max-width: 400px) {
+    .parcours_sub_item {
+        display:block;
 
+    }
+}
