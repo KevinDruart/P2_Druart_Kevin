@@ -393,6 +393,9 @@ a:link {
         width: auto;
         padding: 20px;
     }
+    #parcours a {
+        font-size:14px;
+    }
 
     .parcours_item {
         padding-top: 10px;
@@ -436,6 +439,7 @@ a:link {
     }
 }
 
+
 @media screen and (max-width: 570px) {
     #recommandations_contenu {
         display: block;
@@ -448,9 +452,39 @@ a:link {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 340px) {
+    /*parametre generaux*/
+    .block_page {
+        display:block;
+    }
+    /*icons modification*/
+    .fa-graduation-cap:before {
+        padding-right: 2px;
+    }
+    .fa-briefcase:before {
+        padding-right:2px;
+    }
+    .fa-pencil:before {
+        padding-right:2px;
+    }
+    /*header*/
+    .main_title {
+        padding-bottom: 0px;
+        padding-left:0px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .title_name {
+        font-size:2.4em;
+    }
+    /*corps*/
+    #parcours a {
+        font-size:12px;
+    }
     .parcours_sub_item {
         display:block;
-
+    }
+    .title-parcours {
+        font-size:16px;
     }
 }
