@@ -78,7 +78,7 @@ table {
 }
 
 @viewport {
-    width: device-width; /* largeur du viewport */
+
     zoom: 1; /* zoom initial à 1.0 */
 }
 
@@ -452,3 +452,5 @@ a:link {
         text-align: center;
     }
 }
+
+
