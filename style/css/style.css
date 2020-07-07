@@ -78,7 +78,7 @@ table {
 }
 
 @viewport {
-
+    /*width:device-width;*/
     zoom: 1; /* zoom initial à 1.0 */
 }
 
