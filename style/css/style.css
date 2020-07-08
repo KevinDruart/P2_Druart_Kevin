@@ -316,6 +316,7 @@ a:link {
 
 #recommandations {
     width: 100%;
+    padding-left:64px;
 }
 
 #recommandations_contenu {
@@ -421,6 +422,10 @@ a:link {
 
     .description-poste {
         word-break: break-word;
+    }
+
+    #recommandations {
+        padding-left:0px;
     }
 
 
