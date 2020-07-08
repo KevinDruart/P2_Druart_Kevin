@@ -316,7 +316,7 @@ a:link {
 
 #recommandations {
     width: 100%;
-
+    padding-left:64px;
 }
 
 #recommandations_contenu {
