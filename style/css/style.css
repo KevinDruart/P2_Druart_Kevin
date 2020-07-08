@@ -134,17 +134,18 @@ img {
 .main_title {
     width: 70%;
     padding-top: 120px;
-    padding-left: 65px;
 }
 
 .title_name {
     font-family: open_sanssemibold,Calibri,sans-serif;
     font-size: 3.2em;
+    padding-left: 65px;
 }
 
 .subtilte_name {
     font-family: 'open_sanssemibold',Calibri,sans-serif;
     font-size: 1.2em;
+    padding-left: 65px;
 }
 
 .yellow {
@@ -236,6 +237,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 64px;
 }
 
 .parcours_item_titre {
@@ -271,7 +273,6 @@ img {
 
 #parcours {
     width: 70%;
-    padding-left: 64px;
     line-height: 22px;
 }
 
@@ -373,6 +374,16 @@ a:link {
         text-align: center;
         padding-bottom: 10px;
         padding-top: 10px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+    .title_name {
+        padding-left:0px;
+    }
+
+    .subtilte_name {
+        padding-left:0px;
     }
 
     .underline {
@@ -401,6 +412,7 @@ a:link {
         padding-top: 10px;
         border-top: 2px solid #feca07;
         text-align: justify;
+        padding-left:0px;
     }
 
     .date_location {
