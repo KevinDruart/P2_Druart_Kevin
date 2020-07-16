@@ -161,7 +161,7 @@ img {
 .coords-block div {
     margin-bottom: 10px;
 }
-/*SIDE LEFT*/
+/*COTES GAUCHE(ASIDE)*/
 
 #personal_info {
     display: flex;
@@ -341,7 +341,7 @@ a:link {
     text-transform: uppercase;
 }
 
-/*HERE ALL RESPONSIVE*/
+/*ICI LE RESPONSIV DESIGN*/
 
 @media screen and (max-width: 820px) {
     /*PARAMETRES GENERAUX*/
